@@ -1,5 +1,6 @@
 class box
 {
+    var score =0
     constructor(x,y)
     {
         this.x=x;
@@ -39,9 +40,17 @@ class box
         fill(color)
         }
         rect(0,0,this.width,this.height)
-        text(this.score,200,200)
+        text(score,200,200)
         pop()
 
 
+    }
+     score (score)
+    {
+        if(this.visibility>0 && this.visibility<-105)
+        {
+             score = score+1
+            
+        }
     }
 }
